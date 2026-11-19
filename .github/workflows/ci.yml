@@ -46,6 +46,6 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Ansible Lint
-        uses: ansible/ansible-lint-action@v6
+        uses: ansible/ansible-lint@main
         with:
-          path: "ansible_iac/setup_env.yml"
+          args: "ansible_iac/setup_env.yml"
